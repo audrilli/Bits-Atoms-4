@@ -45,13 +45,8 @@ void loop() {
 
   //This 1 second timefrme is used so you can test the sensor and see it change in real-time.
   //For in-plant applications, you will want to take readings much less frequently.
-  delay(1000);  //take a reading every second
+  delay(10000);  //take a reading every 10 seconds
 
-
-  //leds
-
-  // digitalWrite(ledGreen,HIGH);
-  // digitalWrite(ledRed,HIGH);
 }
 //This is a function used to get the soil moisture content
 int readSoil() {
@@ -63,6 +58,7 @@ int readSoil() {
   return val;                     //send current moisture value
 }
 
+//linking of the leds
 int pinREDBlink() {
 
   for (int i = 0; i < 10; i++) {
